@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav, ul{
+    background-color: black;
+    display: flex;
+    height: 70px;
+    font-size: 25px;
+    align-items: center;
+    height: 30px;
+}
+
+nav {
+    justify-content: space-around;
+}
+
+.arriba {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.logo {
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.barra {
+    list-style: none;
+    flex-wrap: nowrap;
+    background-color: black;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul {
+gap: 25px;
+}
+
+#button1 {
+    height: 20px;
+    width: 20px;
+    margin: 20px;
+}
+
+#buscador {
+    margin: 20px;
+}
