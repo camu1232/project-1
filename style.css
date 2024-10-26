@@ -2,20 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-nav, ul{
+a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+nav {
     background-color: black;
     display: flex;
     height: 70px;
     font-size: 25px;
     align-items: center;
     height: 30px;
-}
-
-nav {
-    justify-content: space-around;
+    justify-content: center;
+    gap: 25px;
 }
 
 .arriba {
@@ -38,11 +43,6 @@ nav {
     color: white;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-evenly;
-}
-
 ul {
 gap: 25px;
 }
@@ -55,4 +55,119 @@ gap: 25px;
 
 #buscador {
     margin: 20px;
+}
+
+.img-inicio {
+    width: 100%;
+}
+
+.grid {
+    background-color: ghostwhite;
+    height: 700px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 250px 250px;
+    grid-template-areas: 
+    "img1 img1 img1 img1"
+    "img2 img3 img4 img5";
+    justify-items: center;
+    align-content: center;
+}
+
+.productos {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+.producto-1 {
+    grid-area: img1;
+    width: 100%;
+}
+
+.producto-2 {
+    grid-area: img2;
+}
+
+.producto-3 {
+    grid-area: img3;
+}
+
+.producto-4 {
+    grid-area: img4;
+}
+
+.producto-5 {
+    grid-area: img5;
+}
+
+.box {
+margin: auto;
+}
+
+.labial-1-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "img1 img1 img1"
+    "img2 img3 img4"
+    "img5 img5 img5";
+    justify-items: center;
+    align-content: center;
+    background-color: white;
+    width: 200px;
+    height: 450px;
+    border: solid 1px;
+    border-radius: 20px;
+    margin: 25px;
+    box-shadow: 3px 3px 5px rgba(156, 156, 156, 0.812);
+    cursor: pointer;
+}
+
+.labial-1 {
+    width: 100px;
+    height: 300px;
+    grid-area: img1;
+    margin-top: 25px;
+}
+
+.colores {
+    border-radius: 50%;
+}
+
+.color-1 {
+    grid-area: img2;
+    background-color: salmon;
+    width: 50px;
+    height: 50px;
+}
+
+.color-2 {
+    grid-area: img3;
+    background-color: rosybrown;
+    width: 50px;
+    height: 50px;
+}
+
+.color-3 {
+    grid-area: img4;
+    background-color: rgb(187, 34, 75);
+    width: 50px;
+    height: 50px;
+}
+
+.texto-1 {
+    grid-area: img5;
+    color: white;
+    background-color: black;
+    border: solid;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px;
 }
